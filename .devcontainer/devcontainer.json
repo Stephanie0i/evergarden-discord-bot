@@ -1,0 +1,16 @@
+{
+  "name": "Lightweight Discord Bot Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "forwardPorts": [8080, 9229],
+  "postCreateCommand": "npm install && curl -L https://fly.io/install.sh | sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "usernamehw.errorlens"
+      ]
+    }
+  }
+}
