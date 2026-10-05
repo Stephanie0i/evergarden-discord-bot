@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-vscode.vscode-typescript-next",
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode",
+    "usernamehw.errorlens",
+    "formulahendry.auto-rename-tag"
+  ]
+}

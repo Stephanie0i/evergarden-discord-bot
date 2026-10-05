@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: build",
+      "type": "shell",
+      "command": "npm run build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "npm: deploy-commands",
+      "type": "shell",
+      "command": "npm run deploy:commands",
+      "problemMatcher": []
+    },
+    {
+      "label": "Fly.io: Test Healthcheck",
+      "type": "shell",
+      "command": "curl -i http://localhost:8080/healthz",
+      "problemMatcher": []
+    },
+    {
+      "label": "Fly.io: Deploy Bot to Cloud",
+      "type": "shell",
+      "command": "fly deploy",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker: Build Lightweight Container",
+      "type": "shell",
+      "command": "docker build -t aero-discord-bot:latest .",
+      "problemMatcher": []
+    }
+  ]
+}
