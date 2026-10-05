@@ -145,7 +145,7 @@ No database required — optional JSON store for theme overrides.
 ### 2. Clone & install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/evergarden-discord-bot.git
+git clone https://github.com/Stephanie0i/evergarden-discord-bot.git
 cd evergarden-discord-bot
 npm install
 ```
